@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USIU-Africa Event Booking Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="C:\Users\suleq\Desktop\apt4035endS\logo.png" alt="USIU-A Logo" class="logo">
+    <h1>Event Booking Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <table id="eventsTable">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Venue</th>
+            <th>Slots Available</th>
+            <th>Register</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="registration">
+      <h2>Register for an Event</h2>
+      <form id="registrationForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" placeholder="xxxxxx" required>
+
+        <label for="eventSelect">Choose Event:</label>
+        <select id="eventSelect" required></select>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 USIU-A. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Twitter</a> | 
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #272c84, #5d61bc);
+  color: #fff;
+  padding: 10px 20px;
+}
+header .logo {
+  margin-right: 15px;
+  border-radius: 10%;
+}
+header h1 {
+  font-size: 2rem;
+}
+
+.events {
+  padding: 15px;
+}
+table {
+  width: 70%;
+  height: 50%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  }
+  
+  table thead:first-child {
+  background-color: #004080;
+  color: white;
+}
+
+th, td {
+  border: #0e0d0d;
+  padding: 10px;
+  border: 2px solid #1b1a1a;
+  text-align: center;
+}
+tbody  {
+  background: #a7b7c5;
+}
+tbody tr:hover {
+  background: #697f94;
+}
+button.register-btn {
+  background: #272c84;
+  color: white;
+  border: 15px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button.register-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+.registration {
+  padding: 20px;
+  background: #808298;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form input:focus, form select:focus {
+  border-color: #0073e6;
+  outline: none;
+}
+.submit-btn {
+  margin-top: 15px;
+  background: #5d61bc;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+.submit-btn:hover {
+  background: #3a3d73;
+}
+#formMessage {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #004080;
+}
+
+footer {
+  text-align: center;
+  background: #004080;
+  color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+}
+footer .social-links a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  td {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+  }
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
